@@ -1,12 +1,10 @@
 {
   "name": "mock-6-back-end",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "dev": "nodemon server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -29,5 +27,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongo": "^0.1.0",
     "mongoose": "^7.5.3"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
