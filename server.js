@@ -9,6 +9,10 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 const DB_URI = 'mongodb+srv://maanav:verma@cluster0.9ndexyx.mongodb.net/blogs?retryWrites=true&w=majority';
 
+app.get("/",(req,res)=>{
+    res.send("welcome to the app")
+})
+
 app.use(express.json());
 app.use(cors());
 
