@@ -4,10 +4,10 @@ const cors = require('cors');
 const authRoutes = require('./routes/auth');
 const blogRoutes = require('./routes/blogs');
 const jsonServer = require('json-server');
-
+require("dotenv").config();
 const app = express();
-const PORT = process.env.PORT || 8080;
-const DB_URI = 'mongodb+srv://maanav:verma@cluster0.9ndexyx.mongodb.net/blogs?retryWrites=true&w=majority';
+const PORT = process.env.Port
+const DB_URI = process.env.MongoURL;
 
 app.get("/",(req,res)=>{
     res.send("welcome to the app")
